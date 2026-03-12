@@ -1,0 +1,25 @@
+{
+    "name": "primix/actions",
+    "description": "Action system for Primix admin panel framework",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "primix/support": "self.version",
+        "primix/notifications": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "Primix\\Actions\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Primix\\Actions\\PrimixActionsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
